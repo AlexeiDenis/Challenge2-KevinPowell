@@ -1,0 +1,165 @@
+/* 
+////// For this challenge ///////
+
+- All text is in the text.md file
+
+// Requirements
+1. Refer to the design specs for the
+   overall layout 
+2. The image should line up with
+   the sidebar in the section
+   below
+
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.logo{margin-right:1em;}
+header {
+    background: #136c72;
+    padding: .5em 0;
+}
+.nav{ display:flex;
+   flex-grow:1;
+   flex-shrink: 1;
+    justify-content: space-between;}
+.nav__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:flex;
+    align-items:center;
+    
+   
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left:1em;
+}
+
+.nav__link--button {
+    background: #fff;
+    color: #136c72;
+    padding: .25em 1em;
+    border-radius: 10em;
+}
+
+.nav__link:hover {
+    opacity: .75;
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+ 
+
+  /* gap: 100px; */
+}
+
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+}
+
+.hero__text {
+  width: 100%;
+}
+
+.hero__img {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.hero p {
+  margin-bottom: 3em;
+}
+
+.btn {
+  width: fit-content;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.75;
+}
+.wrapper-aside h2 {
+  color: #136c72;
+}
+.wrapper-aside p {
+  color: #3a3a3a;
+  line-height: 1.6;
+}
+.wrapper-container {
+  margin-bottom: 1.5em;
+  /* gap: 100px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+.wrapper-columns {
+  background-color: #136c72;
+  padding: 1.3em;
+  color: white;
+}
+.wrapper-columns .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 67.5em) {
+
+  .hero__text {
+    width: 62%;
+  }
+  .hero__img {
+    width: 36%;
+  }
+  .wrapper-container {
+    flex-wrap: nowrap;
+  }
+}
+
+@media screen and (max-width: 67em) {
+    .hero__img{display:none;}
+   
+   }
+
+
